@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div.centro
+    h1= title
+    for person in personList
+        form.marg-t-5(method="post" action="/update")
+            p
+                | Nombre: 
+                input(type='text', name='name', value= person.nombre)
+            p
+                |  Apellido: 
+                input(type='text', name='apel', value= person.apellido)
+            input(type='submit', value='Actualizar')
