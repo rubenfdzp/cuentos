@@ -17,7 +17,7 @@ const { notStrictEqual } = require('assert');
 var tabla = "prueba";
 
 var app = express();
-
+//cambio absurdo para probar github
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
