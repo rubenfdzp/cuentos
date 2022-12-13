@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    div.centro
+        //h1= title
+        table(style='width:100%', border='0')
+            for person in personList
+                //div.uno               
+                tr 
+                    td 
+                        p #{person.nombre}  
+                    td 
+                        a(href=person.apellido, target="_blank") 
+                            img(src="images/ojo.png" alt="Image Title")  
